@@ -6,14 +6,14 @@ import logo from "../img/logo_w1.jpg"
 
 
 class Navbar extends Component {
-  state = { clicked: "false" };
+  state = { clicked: false };
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
   render() {
     return (
       <nav className="NavbarItems">
-        
+
         <Link to="/" className="navbar-logo">
           <img src={logo} alt="AURORA Logo" />
         </Link>
