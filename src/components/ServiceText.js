@@ -1,7 +1,4 @@
 import "./ServiceTextStyles.css";
-import cert1 from "../img/cert1.jpg";
-import cert2 from "../img/cert2.jpg";
-import cert3 from "../img/cert3.jpg";
 
 function ServiceText() {
   return (
