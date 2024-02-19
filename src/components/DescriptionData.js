@@ -1,6 +1,4 @@
 import { Component } from "react";
-import vessel1 from "../img/1.jpg";
-import vessel2 from "../img/8.jpg";
 
 import "./DescriptionStyles.css";
 
