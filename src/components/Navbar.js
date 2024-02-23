@@ -6,7 +6,7 @@ import logo from "../img/logo_w1.jpg"
 
 
 class Navbar extends Component {
-  state = { clicked: "false" };
+  state = { clicked: false };
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };

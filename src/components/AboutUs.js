@@ -1,6 +1,7 @@
 import "./AboutUsStyles.css";
+import CertificateImages from './CertificateImages';
 
-function AboutUs() {
+const AboutUs = () => {
   return (
     <div className="about-cointainer">
       <p>
@@ -36,6 +37,7 @@ function AboutUs() {
         <strong>"Aurora"</strong> - your dependable companion in maritime
         adventures!
       </p>
+      <CertificateImages />
     </div>
   );
 }
