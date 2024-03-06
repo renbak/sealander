@@ -1,36 +1,11 @@
-/* .footer {
-  padding: 1rem 3rem;
-  background-color: #000;
-  color: #fff;
-}
-
-.top {
-  display: flex;
-  align-items: center;
-  text-align: start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-  text-align: end;
-  font-size: small;
-}
-
-
-@media screen and (max-width: 850px) {
-  .footer {
-    padding: 1rem 2rem;
-  }
-} */
-
 .footer {
   padding: 1rem 3rem;
   background-color: #000;
   color: #fff;
+  width: 100%; 
+  box-sizing: border-box; 
 }
+
 
 .top {
   display: flex;
@@ -38,30 +13,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 
 .footer-title {
   text-align: start;
 }
 
+
 .info {
   font-size: small;
   text-align: end;
 }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   .footer {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; 
   }
 
-  .top {
-    flex-direction: row; /* Оставляем как ряд для меньших экранов */
-  }
-
-  .footer-title {
-    text-align: start;
-  }
-
-  .info {
-    text-align: end;
+  .footer-title, .info {
+    text-align: center; 
   }
 }
+
