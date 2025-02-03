@@ -18130,3 +18130,41 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	margin-left: auto;
 	margin-right: auto;
   }
+
+
+  .centered-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	max-width: auto; /* Ограничивает максимальную ширину */
+	font-size: 24px;
+	font-weight: 700;
+	color: black;
+  }
+  
+ 
+   
+  /* Адаптивные стили */
+  @media (max-width: 768px) {
+	.centered-content {
+	  padding: 10px;
+	}
+  
+	.centered-content p {
+	  font-size: 16px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.centered-content {
+	  padding: 5px;
+	}
+  
+	.centered-content p {
+	  font-size: 14px;
+	}
+  }
