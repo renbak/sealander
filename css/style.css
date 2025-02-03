@@ -18132,6 +18132,14 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   }
 
 
+  @media (max-width: 480px) {
+	.overlay-text {
+		font-size: 19px;
+		margin: 0;
+	}
+  }
+
+
   .centered-content {
 	display: flex;
 	flex-direction: column;
@@ -18181,4 +18189,48 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	padding: 0; /* Убирает отступы */
 	margin: 0; /* Убирает отступы */
 	text-align: center;
+  }
+
+  .logo-default {
+	margin-left: 30px;
+  }
+
+  .logo-inverse {
+	display: none;
+  }
+
+  /* Показать logo-inverse и скрыть logo-default на мобильных устройствах */
+@media (max-width: 768px) {
+	.logo-default {
+	  display: none;
+	}
+	.logo-inverse {
+	  display: block;
+	}
+  }
+
+  .row-30 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+	.row-30 {
+		padding: 20px;
+	  justify-content: center; /* Центрирует элементы по горизонтали */
+	}
+  
+	.col-sm-9 {
+	  flex: 0 0 100%; /* Заставляет элементы занимать всю ширину */
+	  max-width: 100%;
+	  margin-bottom: 30px; /* Добавляет отступы между элементами */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.box-minimal {
+	  text-align: center; /* Центрирует текст внутри элементов */
+	  margin-left: 30px;
+	}
   }
