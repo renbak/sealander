@@ -18168,3 +18168,17 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	  font-size: 14px;
 	}
   }
+
+  .footer-contact {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+		
+  }
+  
+  .crewing-managers {
+	list-style: none; /* Убирает маркеры списка */
+	padding: 0; /* Убирает отступы */
+	margin: 0; /* Убирает отступы */
+	text-align: center;
+  }
