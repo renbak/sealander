@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en"> 
-  <head>
-    <!-- Site Title-->
-    <title>Sealander Agency</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-	 </head>
+<head>
+  <!-- Site Title-->
+  <title>Sealander Agency</title>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "wJToOLdgVqcUNNGR-",
+      });
+   })();
+</script>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
 
   <body>
     <!-- Page preloader-->
@@ -185,55 +195,70 @@
               </div>
             </div>
           </div>
-          <div class="container container-bigger form-request-wrap form-request-wrap-modern">
-            <div class="row row-fix justify-content-sm-center justify-content-lg-end">
-              <div class="col-lg-6 col-xxl-5">
-                <div class="form-request form-request-modern bg-gray-lighter novi-background">
-                  <h5 style="text-align: center;">APPLICATION FOR EMPLOYMENT</h5>
-                  <!-- RD Mailform-->
-                  <form class="rd-mailform form-fix" action="mailto:your-email@example.com" method="post" enctype="multipart/form-data">
-                    <div class="row row-20 row-fix">
-                      <div class="col-sm-12">
-                        <label class="form-label-outside" for="first-name">First and Last Name</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <input type="text" id="first-name" name="first-name" class="form-input" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside" for="position">Our Position</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <input type="text" id="position" name="position" class="form-input" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside" for="age">Age</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <input type="text" id="age" name="age" class="form-input" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside" for="email">Email</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <input type="email" id="email" name="email" class="form-input" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside" for="mobile-phone">Mobile Phone</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <input type="tel" id="mobile-phone" name="mobile-phone" class="form-input" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside" for="file">Attach your CV</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <input type="file" id="file" name="file" class="form-input" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-wrap form-button">
-                      <button class="button button-block button-secondary" type="submit">Submit</button>
-                    </div>
-                  </form>
+          <!-- Form -->
+  <div class="container container-bigger form-request-wrap form-request-wrap-modern">
+    <div class="row row-fix justify-content-sm-center justify-content-lg-end">
+      <div class="col-lg-6 col-xxl-5">
+        <div class="form-request form-request-modern bg-gray-lighter novi-background">
+          <h5 style="text-align: center;">APPLICATION FOR EMPLOYMENT</h5>
+          <!-- RD Mailform-->
+          <form id="contact-form" class="rd-mailform form-fix" method="post" enctype="multipart/form-data">
+            <div class="row row-20 row-fix">
+              <div class="col-sm-12">
+                <label class="form-label-outside" for="first-name">First and Last Name</label>
+                <div class="form-wrap form-wrap-inline">
+                  <input type="text" id="first-name" name="first-name" class="form-input" required>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label-outside" for="position">Our Position</label>
+                <div class="form-wrap form-wrap-inline">
+                  <input type="text" id="position" name="position" class="form-input" required>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label-outside" for="age">Age</label>
+                <div class="form-wrap form-wrap-inline">
+                  <input type="text" id="age" name="age" class="form-input" required>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label-outside" for="email">Email</label>
+                <div class="form-wrap form-wrap-inline">
+                  <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label-outside" for="mobile-phone">Mobile Phone</label>
+                <div class="form-wrap form-wrap-inline">
+                  <input type="tel" id="mobile-phone" name="mobile-phone" class="form-input" required>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label-outside" for="file">Attach your CV</label>
+                <div class="form-wrap form-wrap-inline">
+                  <input type="file" id="file" name="file" class="form-input" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-wrap form-button">
+              <button class="button button-block button-secondary" type="submit">Submit</button>
+            </div>
+          </form>
+
+          <script type="text/javascript">
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+
+              emailjs.sendForm("service_10fnwim", "template_zkfd45a", this)
+                .then(function() {
+                  alert('SUCCESS!');
+                }, function(error) {
+                  alert('FAILED...', error);
+                });
+            });
+          </script>
+
                 </div>
               </div>
             </div>
