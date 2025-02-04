@@ -18060,6 +18060,7 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   
   .about-content {
 	text-align: center;
+	color: black;
   }
   
   .about-text {
@@ -18188,8 +18189,7 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	list-style: none; /* Убирает маркеры списка */
 	padding: 0; /* Убирает отступы */
 	margin: 0; /* Убирает отступы */
-	text-align: center;
-  }
+	  }
 
   .logo-default {
 	margin-left: 30px;
