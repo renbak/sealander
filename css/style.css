@@ -18200,7 +18200,7 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   }
 
   /* Показать logo-inverse и скрыть logo-default на мобильных устройствах */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	.logo-default {
 	  display: none;
 	}
@@ -18215,7 +18215,7 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	justify-content: space-between;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
 	.row-30 {
 		padding: 20px;
 	  justify-content: center; /* Центрирует элементы по горизонтали */
