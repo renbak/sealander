@@ -18295,3 +18295,28 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	  }
   }
   }
+
+
+  .centered-text-tag {
+	color: white;
+  }
+
+  @media (max-width: 1200px) {
+	.centered-text-tag {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	  color: #ffa900;
+	  width: 90%;
+	  position: absolute;
+	  top: 15px;
+	  font-weight: 900;
+	}
+  }
+  
+  @media (min-width: 1201px) {
+	.centered-text-tag {
+	  display: none;
+	}
+  }
