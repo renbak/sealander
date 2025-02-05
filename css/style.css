@@ -10619,7 +10619,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 	height: 6px;
 	line-height: 6px;
 	text-align: center;
-	background: #333333;
+	background: #ffa900;
 	left: 50%;
 	margin-left: -3px;
 	border-radius: 50%;
@@ -10712,7 +10712,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-sidebar-toggle span {
 	width: 24px;
 	height: 4px;
-	background-color: #29293a;
+	background-color: #ffa900;
 	backface-visibility: hidden;
 	border-radius: 2px;
 }
@@ -12102,7 +12102,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 	bottom: 0;
 	right: 0;
 	box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
-	background: #ffffff;
+	background: black;
 }
 
 .rd-navbar-fixed .rd-navbar-panel > * {
@@ -18179,8 +18179,7 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   }
 
   .footer-contact {
-	display: flex;
-	align-items: center;
+	
 	font-weight: 400;
 		
   }
@@ -18200,7 +18199,7 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   }
 
   /* Показать logo-inverse и скрыть logo-default на мобильных устройствах */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	.logo-default {
 	  display: none;
 	}
@@ -18233,4 +18232,66 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	  text-align: center; /* Центрирует текст внутри элементов */
 	  margin-left: 30px;
 	}
+  }
+
+  /* .crewing-managers-container {
+	display: flex;
+	justify-content: center;
+  } */
+  
+  .crewing-managers {
+	list-style: none; /* Убирает маркеры списка */
+	padding: 0; /* Убирает отступы */
+	margin-left: 10px; /* Убирает отступы */
+	text-align: left; /* Выравнивание текста по левому краю по умолчанию */
+  }
+  
+  .crewing-managers li {
+	margin-bottom: 10px; /* Добавляет отступы между элементами списка */
+  }
+  
+
+  @media (max-width: 1200px) {
+	.crewing-managers {
+	  text-align: center; /* Центрирует текст внутри элементов списка на мобильных устройствах */
+	}
+}
+
+
+
+
+/* Основные стили */
+.footer-image-container {
+	display: none; /* Скрыть изображение по умолчанию */
+	
+  }
+  
+  .footer-image {
+	max-width: 100px;
+	height: auto;
+  }
+  
+  /* Адаптивные стили для экранов с шириной меньше 1200 пикселей */
+  @media (max-width: 1200px) {
+	/* Основные стили */
+.footer-image-container {
+	display: none; /* Скрыть изображение по умолчанию */
+	text-align: left; /* Выравнивание изображения по левому краю */
+  }
+  
+  .footer-image {
+	max-width: 100px;
+	height: auto;
+  }
+  
+  /* Адаптивные стили для экранов с шириной меньше 1200 пикселей */
+  @media (max-width: 1200px) {
+	.footer-image-container {
+		display: flex; /* Показать изображение */
+		justify-content: flex-start; /* Выравнивание изображения по левому краю */
+		position: absolute; /* Абсолютное позиционирование */
+		left: 20px; /* Прижать к левому краю */
+		margin-top: 30px;
+	  }
+  }
   }
