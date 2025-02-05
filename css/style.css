@@ -18289,16 +18289,12 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   @media (max-width: 1200px) {
 	.footer-image-container {
 		display: flex; /* Показать изображение */
-		justify-content: flex-start; /* Выравнивание изображения по левому краю */
-		position: absolute; /* Абсолютное позиционирование */
+		justify-content: center; /* Выравнивание изображения по левому краю */
 		left: 20px; /* Прижать к левому краю */
 		margin-top: 30px;
 		
 	  }
 
-	  .footer-image {
-	  max-width: 20%;
-	  }
   }
   
 
